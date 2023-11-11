@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "jsx": "react-jsx",
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        // change alias
+        "baseUrl": ".",
+        "paths": {
+            // @ --> src/ || dist/
+            "@/*": ["src/*", "dist/*", ""],
+            // @components --> src/components
+            "@components/*": ["src/components/*"],
+            // @pages --> src/pages
+            "@pages/*": ["src/pages/*"]
+        },
+        //
+        "types": ["vite/client", "react", "react-dom"],
+        "strict": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
